@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="calc.model.CalcResult" table="calc_result" schema="public" catalog="calc">
+        <id name="id">
+            <column name="id" sql-type="integer" not-null="true"/>
+        </id>
+        <property name="firstNum">
+            <column name="first_num" sql-type="numeric" not-null="true"/>
+        </property>
+        <property name="secondNum">
+            <column name="second_num" sql-type="numeric"/>
+        </property>
+        <property name="operation">
+            <column name="operation" sql-type="varchar(20)" not-null="true"/>
+        </property>
+        <property name="resultNum">
+            <column name="result_num" sql-type="numeric" not-null="true"/>
+        </property>
+        <property name="resultDate">
+            <column name="result_date" sql-type="timestamp" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

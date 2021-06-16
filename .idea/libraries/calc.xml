@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="calc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/calc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/postgresql-42.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

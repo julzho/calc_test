@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="420" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.CalcController">
+   <children>
+      <VBox alignment="CENTER" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txtResult" alignment="CENTER_RIGHT" editable="false" maxHeight="1.7976931348623157E308" prefHeight="70.0" prefWidth="290.0">
+                <font>
+                    <Font size="36.0" />
+                </font>
+            </TextField>
+            <GridPane hgap="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="11.0">
+                <children>
+                    <Button fx:id="btnClear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedClear" text="AC" textAlignment="CENTER">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="btnBackspace" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedBackspace" text="←" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </Button>
+                    <Button id="SQUAREROOT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedOperation" text="√" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </Button>
+                    <Button id="EXPONENTIATION" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedOperation" text="n²" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </Button>
+
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="7" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button id="ADDITION" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedOperation" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="4" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button id="SUBTRACTION" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedOperation" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="1" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button id="MULTIPLICATION" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedOperation" text="×" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+
+                    <Button fx:id="btnHistory" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedHistory" text="☰" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>    
+                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedNum" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="btnDelimiter" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedDelimiter" text="," textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                    <Button id="DIVISION" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedOperation" text="÷" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Button>
+                </children>
+                <columnConstraints>
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="62.0" minWidth="10.0" />
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="62.0" minWidth="10.0" />
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="62.0" minWidth="10.0" />
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="62.0" minWidth="10.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="55.0" minHeight="10.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="55.0" minHeight="10.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="55.0" minHeight="10.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="55.0" minHeight="10.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="55.0" minHeight="10.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+            </GridPane>
+            <Button fx:id="btnCalculate" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#pressedCalculate" text="=" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
